@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(245, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(23, 23, 233, 0.13);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.usuario{
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.contraseña{
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#error_login{
+    display: none;
+}
+
+button{
+    height: 30px;
+    width: 50%;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: blue;
+    box-shadow: 2px 2px 2px 4px black;
+}
+.check{
+    display: flex;
+    height: 20px;
+    width: 20px;
+          
+}
+.recordarme2{
+    font-size: 20px;
+}
+.recordarme{
+    height: 30px;
+    width: 70%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    font-size: 20px;
+}

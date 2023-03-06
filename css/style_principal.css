@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../imagenes/rainbow-vortex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.general{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+ul{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: 20px;
+    background-color: white;
+}
+li{
+    margin-left: 40px;
+}
+.salir{
+    position:absolute;
+    left: 90%;
+}
+.informacion{
+    height: calc(100vh - 30px);
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.contenido{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 100px
+    ;
+  
+}
+.texto{
+    height: 300px;
+    width: 600px;
+    color: white;
+}
+.imagen2{
+    height: 300px;
+    width: 400px;
+}
+
+/* .imagen{
+    height: 400px;
+    width: 400px;
+    background-image: url(../imagenes/pexels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
