@@ -44,6 +44,8 @@ li{
     width: 100% ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -72,10 +74,113 @@ li{
     width: 400px;
 }
 
-/* .imagen{
+.containertarjetas{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.card_product{
+    height: 600px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.card_product_title{
+    height: 20%;
+    width: auto;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.card_product_image{
+    height: 30%;
+    width: auto;
+}
+
+img{
+    height: 100px;
+    width: 150px;
+}
+.card_product_description{
+    height: 20%;
+    width: auto;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+
+::-webkit-scrollbar{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+.card_product_price{
+    height: 10%;
+    width: auto;
+    color: red;
+}
+.btn_sale , .btn_cancel{
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+.btn_cancel{
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+.btn_buy{
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+
+.modal{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    position: fixed;
+    justify-content: center;
+    align-items:center ;
+    display: none;
+}
+.ventana{
     height: 400px;
-    width: 400px;
-    background-image: url(../imagenes/pexels.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+    width: 300px;
+}
+.cerrar{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    left: 268px;
+    pointer-events: painted;
+
+}
