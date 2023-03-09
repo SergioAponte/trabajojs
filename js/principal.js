@@ -63,15 +63,17 @@ addEventListener('click', (event)=>{
 })
 
 const ventana=document.querySelector('.ventana')
-let product_name=document.querySelector('.card_product_title-modal')
 ventana.addEventListener('click',event=>{
-    
+    let product_name= ''
     if(event.target.className=='btn btn_cancel'){
         modal.style.display='none'
     }
     if(event.target.className=='btn btn_sale'){
-        localStorage.getItem(product_name.value)
+        const productoComprado=[document.querySelector('.card_product_title-modal').innerText,];
+        JSON.stringify(localStorage.setItem('productos',productoComprado))
         location='./html/emergente.html'
+        product_name=JSON.parse(localStorage.getItem('productos'))
+        console.log(product_name)
         // if (location=true){
             
         // }
@@ -83,9 +85,7 @@ ventana.addEventListener('click',event=>{
     }
 })
 
-
-// let product_name=document.querySelector('.card_product_title-modal')
-// product_name.addEventListener('click',event=>{
+// btn_sale.addEventListener('click',event=>{
 //     localStorage.getItem('data',product_name.value)
 //     location='./html/emergente.html'
 //     console.log(product_name.value)
