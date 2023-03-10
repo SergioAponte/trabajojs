@@ -64,7 +64,7 @@ addEventListener('click', (event)=>{
 
 const ventana=document.querySelector('.ventana')
 ventana.addEventListener('click',event=>{
-    let product_name= ''
+    let product_name= []
     if(event.target.className=='btn btn_cancel'){
         modal.style.display='none'
     }
@@ -72,12 +72,13 @@ ventana.addEventListener('click',event=>{
         const productoComprado=[document.querySelector('.card_product_title-modal').innerText,];
         JSON.stringify(localStorage.setItem('productos',productoComprado))
         location='./html/emergente.html'
-        product_name=JSON.parse(localStorage.getItem('productos'))
-        console.log(product_name)
+        product_name=JSON.parse(localStorage.getItem(productos))
+        console.log(`Gracias por comprar ${productos.innerHTML}`)
+        // console.log(product_name)
         // if (location=true){
             
-        // }
-        console.log(product_name)
+        // // }
+        // console.log(product_name)
         // alert('comprado')
     }
     if(event.target.className=='cerrar'){

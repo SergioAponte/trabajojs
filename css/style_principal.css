@@ -98,6 +98,7 @@ li{
     background-color: beige;
     box-shadow: 2px 2px black;
     text-align: center;
+    gap: 20px;
 }
 
 .card_product_title{
@@ -155,6 +156,7 @@ img{
     background-color: blue;
     color: white;
     border-radius: 15px;
+    margin-top: -30px;
 }
 
 .modal{
@@ -164,7 +166,6 @@ img{
     background-color: white;
     position: fixed;
     justify-content: center;
-    align-items:center ;
     display: none;
 }
 .ventana{
